@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+}
+
+:root {
+  --text-color: #c7c7c7;
+  --background-hover-dark: #4b4b4b;
+  --background-hover-light: #fafafa;
+  --background-dark: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('./assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.primary-header-content {
+  min-height: 10vh;
+  border-bottom: 1.5px solid var(--background-dark);
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0rem;
+}
+
+.get-in-touch {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex: 5;
+}
+
+.get-in-touch .icon {
+  color: var(--text-color);
+  border: 2px solid var(--background-dark);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.get-in-touch a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.get-in-touch a:hover {
+  color: var(--background-hover-light);
+}
+
+.socials {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.socials a:hover {
+  color: var(--background-hover-light);
+}
+
+main {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.my-introduction {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.my-introduction .avatar {
+  width: 120px;
+  height: 120px;
+  background-image: url('./assets/programmer.png');
+  background-size: cover;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.my-introduction h2 {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.my-introduction p {
+  width: 50%;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  margin: auto;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.follow-up-button {
+  padding: 0.5rem 0rem;
+  margin-top: 1rem;
+  transition: transform 300ms ease-out;
+}
+
+.follow-up-button a {
+  text-decoration: none;
+  background-color: var(--background-dark);
+  padding: 0.5rem 1.5rem;
+  outline: 0.5px solid var(--text-color);
+  border-radius: 0.15rem;
+}
+
+.follow-up-button:hover {
+  transform: scale(0.95);
+}
+
+.blogs-section {
+  z-index: 1;
+  min-height: 30vh;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  gap: 2rem;
+}
+
+.blog {
+  background-color: var(--background-dark);
+}
+
+.blog-image {
+  height: 200px;
+  background-image: url('./assets/blogimage1.jpg');
+  background-size: cover;
+  background-color: black;
+}
+
+.blog .blog-description {
+  padding: 0.5rem 1.5rem;
+}
+
+.blog .blog-heading {
+  font-size: 0.7rem;
+}
+
+.blog .blog-short-description {
+  text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+  .get-in-touch {
+    flex: 2;
+  }
+  .get-in-touch .icon {
+    margin-left: 0.5rem;
+    height: 40px;
+    width: 40px;
+    font-size: 0.9rem;
+  }
+  .get-in-touch a {
+    font-size: 0.9rem;
+  }
+  .socials {
+    flex: 1;
+  }
+  .my-introduction .avatar {
+    margin-bottom: 0.5rem;
+  }
+  .my-introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  .my-introduction p {
+    width: 90%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 1.7;
+  }
+  .blogs-section {
+    flex-wrap: wrap;
+  }
+}
