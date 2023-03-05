@@ -33,7 +33,7 @@ body {
 
 .primary-header-content {
   min-height: 10vh;
-  border-bottom: 1.5px solid var(--background-dark);
+  border-bottom: 2px solid var(--background-dark);
   max-width: 1250px;
   margin: auto;
   display: flex;
@@ -193,40 +193,59 @@ main {
   padding-left: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   border-radius: 0.1rem;
 }
 
 .icon-and-name {
   display: flex;
   align-items: center;
+  margin-bottom: 0.7rem;
 }
 
 .icon-and-name i {
   margin-right: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .icon-and-name h2 {
-  font-size: 1.07rem;
+  font-size: 1.15rem;
 }
 
 .skill-description {
-  text-align: justify;
   max-width: 95%;
+  font-weight: bold;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 .read-more-button {
   padding: 1rem 0rem;
+  margin-bottom: 1rem;
 }
 
 .read-more-button a {
   text-decoration: none;
   background-color: var(--background-hover-dark);
+  border: 2px solid var(--background-dark);
   padding: 0.5rem 1rem;
   border-radius: 0.1rem;
   font-weight: bold;
   font-size: 0.85rem;
+}
+
+footer {
+  border-top: 2px solid var(--background-dark);
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  padding: 1.5rem 0rem;
+}
+
+footer p {
+  flex: 5;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -273,5 +292,9 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
+  }
+  footer p {
+    flex: 2;
+    margin-left: 1rem;
   }
 }
