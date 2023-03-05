@@ -374,6 +374,9 @@ footer p {
   .read-more-button {
     margin-bottom: 0rem;
   }
+  form {
+    max-width: 85%;
+  }
   footer p {
     flex: 2;
     margin-left: 1rem;
