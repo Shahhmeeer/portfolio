@@ -197,6 +197,10 @@ main {
   border-radius: 0.1rem;
 }
 
+.skill:hover {
+  border: 0.2px solid var(--background-hover-light);
+}
+
 .icon-and-name {
   display: flex;
   align-items: center;
@@ -232,6 +236,76 @@ main {
   border-radius: 0.1rem;
   font-weight: bold;
   font-size: 0.85rem;
+}
+
+.contact-me-section {
+  min-height: 50vh;
+}
+
+.contact-me-section h1 {
+  text-align: center;
+  padding: 3rem;
+}
+
+form {
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name-input {
+  display: flex;
+  gap: 1rem;
+}
+
+.name {
+  flex: 1;
+  padding: 0.5rem 0rem;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  border-bottom: 1px solid var(--background-hover-dark);
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.name:focus {
+  box-shadow: 0px 1px 0px var(--background-hover-light);
+}
+
+textarea {
+  outline: none;
+  background-color: var(--background-dark);
+  color: var(--text-color);
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 150px;
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 0.15rem;
+}
+
+.send-button {
+  background-color: var(--background-hover-dark);
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.15rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 300ms ease-out;
+}
+
+.send-button:hover {
+  background-color: var(--background-hover-light);
+  color: var(--background-dark);
 }
 
 footer {
@@ -292,6 +366,13 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
+  }
+  .skill {
+    justify-content: center;
+    height: 310px;
+  }
+  .read-more-button {
+    margin-bottom: 0rem;
   }
   footer p {
     flex: 2;
