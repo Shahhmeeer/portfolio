@@ -301,6 +301,8 @@ textarea {
   width: 100%;
   font-size: 1rem;
   transition: background-color 300ms ease-out;
+  outline: none;
+  border: none;
 }
 
 .send-button:hover {
@@ -379,6 +381,28 @@ footer p {
   }
   footer p {
     flex: 2;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  /* .primary-header-content {
+    display: none;
+  } */
+  .get-in-touch .icon {
+    margin-left: 0.5rem;
+  }
+  .skills-section {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .quotes {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  footer p {
     margin-left: 1rem;
   }
 }
