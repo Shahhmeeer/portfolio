@@ -292,7 +292,9 @@ textarea {
 }
 
 .send-button {
-  background-color: var(--background-hover-dark);
+  background-color: var(--background-dark);
+  border: none;
+  outline: 0.5px solid var(--background-hover-dark);
   padding: 0.5rem 2rem;
   font-weight: bold;
   cursor: pointer;
@@ -301,13 +303,10 @@ textarea {
   width: 100%;
   font-size: 1rem;
   transition: background-color 300ms ease-out;
-  outline: none;
-  border: none;
 }
 
 .send-button:hover {
-  background-color: var(--background-hover-light);
-  color: var(--background-dark);
+  background-color: var(--background-hover-dark);
 }
 
 footer {
@@ -386,9 +385,6 @@ footer p {
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
-  /* .primary-header-content {
-    display: none;
-  } */
   .get-in-touch .icon {
     margin-left: 0.5rem;
   }
