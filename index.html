@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +15,159 @@
   <!-- Javascript -->
   <script src="https://kit.fontawesome.com/fe1ef81de4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <div class="primary-header-content">
-      <div class="get-in-touch">
-        <i class="fa-regular fa-envelope icon"></i>
-        <a href="mailto:shahmeerasim1999@gmail.com">Get in touch</a>
+  <div class="desktop-view">
+  </div>
+  <div class="mobile-view">
+    <header>
+      <div class="primary-header-content">
+        <div class="get-in-touch">
+          <i class="fa-regular fa-envelope icon"></i>
+          <a href="mailto:shahmeerasim1999@gmail.com">Get in touch</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/shahmeer-asim-457b13239/" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Shahhmeeer" target="_blank" title="Github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/shahh_meeer/" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </div>
+    </header>
+    <main>
+      <div class="my-introduction">
+        <div class="avatar"></div>
+        <div class="my-name">
+          <h2>Greetings!</h2>
+        </div>
+        <div class="my-description">
+          <p>My name is Shahmeer and I recently completed my Bachelors degree in Computer Science. I am currently
+            looking for a place to polish my Coding, Communication and Social Skills. I am sure that I will be a great
+            asset for your company as I am a quick learner and enjoy learning new skills. I am also good at searching
+            the optimal solutions for a current problem but ofcourse working with your company, I'm sure I will improve
+            much more and will add great value to your company. I hope to hear from you as I will be more than happy to
+            be working under your supervision. Thanks in advance and Best Regards!</p>
+        </div>
+        <div class="follow-up-button">
+          <a href="#skill-section">Things I do</a>
+        </div>
+      </div>
+      <div class="my-skills-section" id="skill-section">
+        <h1>What I Do</h1>
+        <div class="skills-section">
+          <div class="skill application-dev">
+            <div class="icon-and-name">
+              <div class="skill-icon">
+                <i class="fa-solid fa-mobile-screen-button icon"></i>
+              </div>
+              <div class="skill-name">
+                <h2>Application <br> Development</h2>
+              </div>
+            </div>
+            <div class="skill-description">
+              <p>I recently started learning mobile application development (Flutter) few months ago, and it compeletly
+                fits right with my interest. Flutter as a framework is something that I thoroughly enjoy building apps
+                on.</p>
+            </div>
+            <div class="read-more-button">
+              <a href="./pages/app-dev-projects.html">View Projects</a>
+            </div>
+          </div>
+          <div class="skill web-dev">
+            <div class="icon-and-name">
+              <div class="skill-icon">
+                <i class="fa-solid fa-code icon"></i>
+              </div>
+              <div class="skill-name">
+                <h2>Website <br> Development</h2>
+              </div>
+            </div>
+            <div class="skill-description">
+              <p>Website development (frontend) is the first and only thing that I started during my University that I
+                still love doing. Building cool layouts with just HTML, CSS & Vanilla Javascript is really something
+                that helps me keep learning more.</p>
+            </div>
+            <div class="read-more-button">
+              <a href="./pages/web-projects.html">View Projects</a>
+            </div>
+          </div>
+          <div class="skill writing">
+            <div class="icon-and-name">
+              <div class="skill-icon">
+                <i class="fa-solid fa-pencil icon"></i>
+              </div>
+              <div class="skill-name">
+                <h2>Writing</h2>
+              </div>
+            </div>
+            <div class="skill-description">
+              <p>Writing is something that I do when I dont feel like doing anything else. I write Short Stories, Blogs,
+                and sometimes Life Experiences. I still am learning to improve my writing skills though, but I hope
+                you'll enjoy reading.</p>
+            </div>
+            <div class="read-more-button">
+              <a href="./pages/thoughts-stories.html">Things I wrote</a>
+            </div>
+          </div>
+          <div class="skill singing">
+            <div class="icon-and-name">
+              <div class="skill-icon">
+                <i class="fa-solid fa-music icon"></i>
+              </div>
+              <div class="skill-name">
+                <h2>Music/Singing</h2>
+              </div>
+            </div>
+            <div class="skill-description">
+              <p>I can say this with confidence that before I started my journey as a Developer, Singing was something
+                that I enjoyed very much. Bathroom singing, yes! I still feel the same energy listening to music.
+                Singing makes me feel "like an artist"</p>
+            </div>
+            <div class="read-more-button">
+              <a href="https://www.youtube.com/@averageguy985/featured" target="_blank">My Youtube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="quote-section">
+        <h1>Few things my fellow Developers can understand!</h1>
+        <div class="quotes">
+          <div class="quote quote1">Things aren't always #000000 #FFFFFF</div>
+          <div class="quote quote2">Expected ; at the end</div>
+          <div class="quote quote3">If-Else >>> AI</div>
+        </div>
+      </section>
+      <div class="contact-me-section">
+        <h1>Drop me a Message!</h1>
+        <div class="form-section">
+          <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <div class="name-input">
+              <input autocapitalize="sentences" required type="text" placeholder="First Name" name="first-name"
+                class="name">
+              <input autocapitalize="sentences" required type="text" placeholder="Last Name" name="last-name"
+                class="name">
+            </div>
+            <div class="email-address">
+              <input required type="email" , placeholder="email@xyz.com" name="email-address" class="name">
+            </div>
+            <div class="user-text">
+              <textarea autocapitalize="sentences" required name="message" id="user-message" cols="40" rows="10"
+                placeholder="Your Message"></textarea>
+            </div>
+            <div class="submit-area">
+              <input type="submit" value="Send" class="send-button">
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 All rights reserved.</p>
       <div class="socials">
         <a href="https://www.linkedin.com/in/shahmeer-asim-457b13239/" target="_blank" title="LinkedIn">
           <i class="fa-brands fa-linkedin-in"></i>
@@ -32,132 +179,8 @@
           <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="my-introduction">
-      <div class="avatar"></div>
-      <div class="my-name">
-        <h2>Greetings!</h2>
-      </div>
-      <div class="my-description">
-        <p>My name is Shahmeer and I recently completed my Bachelors degree in Computer Science. I am currently looking for a place to polish my Coding, Communication and Social Skills. I am sure that I will be a great asset for your company as I am a quick learner and enjoy learning new skills. I am also good at searching the optimal solutions for a current problem but ofcourse working with your company, I'm sure I will improve much more and will add great value to your company. I hope to hear from you as I will be more than happy to be working under your supervision. Thanks in advance and Best Regards!</p>
-      </div>
-      <div class="follow-up-button">
-        <a href="#skill-section">Things I do</a>
-      </div>
-    </div>
-    <div class="my-skills-section" id="skill-section">
-      <h1>What I Do</h1>
-      <div class="skills-section">
-        <div class="skill application-dev">
-          <div class="icon-and-name">
-            <div class="skill-icon">
-              <i class="fa-solid fa-mobile-screen-button icon"></i>
-            </div>
-            <div class="skill-name">
-              <h2>Application <br> Development</h2>
-            </div>
-          </div>
-          <div class="skill-description">
-            <p>I recently started learning mobile application development (Flutter) few months ago, and it compeletly fits right with my interest. Flutter as a framework is something that I thoroughly enjoy building apps on.</p>
-          </div>
-          <div class="read-more-button">
-            <a href="./pages/app-dev-projects.html">View Projects</a>
-          </div>
-        </div>
-        <div class="skill web-dev">
-          <div class="icon-and-name">
-            <div class="skill-icon">
-              <i class="fa-solid fa-code icon"></i>
-            </div>
-            <div class="skill-name">
-              <h2>Website <br> Development</h2>
-            </div>
-          </div>
-          <div class="skill-description">
-            <p>Website development (frontend) is the first and only thing that I started during my University that I still love doing. Building cool layouts with just HTML, CSS & Vanilla Javascript is really something that helps me keep learning more.</p>
-          </div>
-          <div class="read-more-button">
-            <a href="./pages/web-projects.html">View Projects</a>
-          </div>
-        </div>
-        <div class="skill writing">
-          <div class="icon-and-name">
-            <div class="skill-icon">
-              <i class="fa-solid fa-pencil icon"></i>
-            </div>
-            <div class="skill-name">
-              <h2>Writing</h2>
-            </div>
-          </div>
-          <div class="skill-description">
-            <p>Writing is something that I do when I dont feel like doing anything else. I write Short Stories, Blogs, and sometimes Life Experiences. I still am learning to improve my writing skills though, but I hope you'll enjoy reading.</p>
-          </div>
-          <div class="read-more-button">
-            <a href="./pages/thoughts-stories.html">Things I wrote</a>
-          </div>
-        </div>
-        <div class="skill singing">
-          <div class="icon-and-name">
-            <div class="skill-icon">
-              <i class="fa-solid fa-music icon"></i>
-            </div>
-            <div class="skill-name">
-              <h2>Music/Singing</h2>
-            </div>
-          </div>
-          <div class="skill-description">
-            <p>I can say this with confidence that before I started my journey as a Developer, Singing was something that I enjoyed very much. Bathroom singing, yes! I still feel the same energy listening to music. Singing makes me feel "like an artist"</p>
-          </div>
-          <div class="read-more-button">
-            <a href="https://www.youtube.com/@averageguy985/featured" target="_blank">My Youtube</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="quote-section">
-      <h1>Few things my fellow Developers can understand!</h1>
-      <div class="quotes">
-        <div class="quote quote1">Things aren't always #000000 #FFFFFF</div>
-        <div class="quote quote2">Expected ; at the end</div>
-        <div class="quote quote3">If-Else >>> AI</div>
-      </div>
-    </section>
-    <div class="contact-me-section">
-      <h1>Drop me a Message!</h1>
-      <div class="form-section">
-        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-          <div class="name-input">
-            <input autocapitalize="sentences" required type="text" placeholder="First Name" name="first-name" class="name">
-            <input autocapitalize="sentences" required type="text" placeholder="Last Name" name="last-name" class="name">
-          </div>
-          <div class="email-address">
-            <input required type="email", placeholder="email@xyz.com" name="email-address" class="name">
-          </div>
-          <div class="user-text">
-            <textarea autocapitalize="sentences" required name="message" id="user-message" cols="40" rows="10" placeholder="Your Message"></textarea>
-          </div>
-          <div class="submit-area">
-            <input type="submit" value="Send" class="send-button">
-          </div>
-        </form>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2023 All rights reserved.</p>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/shahmeer-asim-457b13239/" target="_blank" title="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/Shahhmeeer" target="_blank" title="Github">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="https://www.instagram.com/shahh_meeer/" target="_blank" title="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
+
 </html>
