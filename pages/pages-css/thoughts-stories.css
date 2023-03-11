@@ -23,7 +23,9 @@ html {
 }
 
 body {
-  background-color: var(--background-dark);
+  background-image: url('../../assets/background.jpg');
+  background-attachment: fixed;
+  background-size: contain;
   font-family: 'Quicksand', sans-serif;
   color: var(--text-color);
 }
@@ -70,24 +72,27 @@ main {
   font-family: 'Poppins', sans-serif;
 }
 
+.story {
+  background-color: var(--background-dark);
+  max-width: 330px;
+  position: relative;
+  border-radius: 0.2rem;
+}
+
+.story h1 {
+  font-size: 1.65rem;
+  padding-top: 1rem;
+}
+
 .story-image {
   background-image: url('../../assets/thirsty-crow.jpg');
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
   width: 100%;
   min-height: 150px;
   background-size: cover;
   background-position-y: -40px;
   background-repeat: no-repeat;
-}
-
-.story {
-  background-color: var(--text-color);
-  max-width: 350px;
-  border: 1px solid var(--background-hover-dark);
-  position: relative;
-  color: var(--background-dark);
-  border-radius: 0.3rem;
 }
 
 .story-details {
@@ -99,20 +104,22 @@ main {
   text-align: justify;
   font-weight: bold;
   margin: 0.5rem 0rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 .read-more-button {
-  padding: 0.5rem 0rem;
-  margin-bottom: 0.5rem;
+  padding: 0.75rem 0rem;
+  margin-bottom: 0.9rem;
 }
 
 .story a {
-  background-color: var(--background-dark);
+  background-color: var(--background-hover-dark);
   text-decoration: none;
   padding: 0.5rem 1rem;
   color: var(--text-color);
   font-weight: bold;
-  font-size: 0.85rem;
+  font-size: 0.80rem;
   border-radius: 0.15rem;
 }
 
@@ -148,5 +155,17 @@ main {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+  }
+  .stories-section h1 {
+    margin-bottom: 2rem;
+  }
+  .story h1 {
+    padding-top: 0.75rem;
+  }
+  .story p {
+    margin-top: -1.75rem;
+  }
+  .story2 {
+    margin-left: 0;
   }
 }
